@@ -1,0 +1,138 @@
+=========================
+Unity .gitignore
+=========================
+Archivos y carpetas generados automáticamente
+[Librería ignorada]/
+[Librería ignorada]/
+[Librería ignorada]/
+[Librería ignorada]/
+[Librería ignorada]/
+
+Archivos de compilación
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.dll
+*.class
+*.jar
+*.so
+*.dylib
+
+Configuración local de IDEs
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+Archivos de sistema
+.DS_Store
+Thumbs.db
+
+Archivos temporales de Unity
+*.swp
+*.tmp
+*.temp
+*.log
+*.orig
+
+Archivos de caché de compilación
+*.apk
+*.aab
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata
+*.xcsettings
+
+Archivos generados por Unity Cloud o cache
+sysinfo.txt
+crashlytics-build.properties
+
+🔹 ¿Qué sí se sube?
+
+La carpeta Assets/ (tus modelos, scripts, escenas, prefabs, etc.).
+
+La carpeta ProjectSettings/ (configuración del proyecto).
+
+Los archivos .meta (indispensables para que Unity no pierda referencias).
+
+🔹 ¿Qué no se sube?
+
+Carpetas Library/, Temp/, Build/, Logs/ → se regeneran automáticamente.
+
+Configuración local de Visual Studio, Rider, VSCode, etc.
+
+👉 Con esto tu repositorio en Git solo guardará lo realmente necesario y evitarás problemas de sincronización.
+
+¿Quieres que te muestre también el flujo recomendado con ramas para que tu equipo trabaje más organizado (ej: main, develop, feature/...)?
+=========================
+Unity .gitignore
+=========================
+Archivos y carpetas generados automáticamente
+[Librería ignorada]/
+[Librería ignorada]/
+[Librería ignorada]/
+[Librería ignorada]/
+[Librería ignorada]/
+
+Archivos de compilación
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.dll
+*.class
+*.jar
+*.so
+*.dylib
+
+Configuración local de IDEs
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+Archivos de sistema
+.DS_Store
+Thumbs.db
+
+Archivos temporales de Unity
+*.swp
+*.tmp
+*.temp
+*.log
+*.orig
+
+Archivos de caché de compilación
+*.apk
+*.aab
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata
+*.xcsettings
+
+Archivos generados por Unity Cloud o cache
+sysinfo.txt
+crashlytics-build.properties
