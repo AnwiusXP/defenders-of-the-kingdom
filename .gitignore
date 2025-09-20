@@ -1,28 +1,22 @@
-=========================
-Unity .gitignore
-=========================
-Archivos y carpetas generados automáticamente
-[Librería ignorada]/
-[Librería ignorada]/
-[Librería ignorada]/
-[Librería ignorada]/
-[Librería ignorada]/
+# === UNITY ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
 
-Archivos de compilación
-*.apk
-*.aab
-*.unitypackage
-*.app
-*.exe
-*.dll
-*.class
-*.jar
-*.so
-*.dylib
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
 
-Configuración local de IDEs
+# Uncomment if you have local project settings
+# [Pp]rojectSettings/
+
+# === VISUAL STUDIO ===
+.vs/
 .vscode/
-.idea/
 *.csproj
 *.unityproj
 *.sln
@@ -35,104 +29,16 @@ Configuración local de IDEs
 *.svd
 *.pdb
 *.mdb
+*.opendb
+*.VC.db
 
-Archivos de sistema
+# === OS GENERATED ===
 .DS_Store
 Thumbs.db
 
-Archivos temporales de Unity
-*.swp
-*.tmp
-*.temp
-*.log
-*.orig
-
-Archivos de caché de compilación
-*.apk
-*.aab
-*.xcuserstate
-*.xcworkspace
-*.xcuserdata
-*.xcsettings
-
-Archivos generados por Unity Cloud o cache
-sysinfo.txt
-crashlytics-build.properties
-
-🔹 ¿Qué sí se sube?
-
-La carpeta Assets/ (tus modelos, scripts, escenas, prefabs, etc.).
-
-La carpeta ProjectSettings/ (configuración del proyecto).
-
-Los archivos .meta (indispensables para que Unity no pierda referencias).
-
-🔹 ¿Qué no se sube?
-
-Carpetas Library/, Temp/, Build/, Logs/ → se regeneran automáticamente.
-
-Configuración local de Visual Studio, Rider, VSCode, etc.
-
-👉 Con esto tu repositorio en Git solo guardará lo realmente necesario y evitarás problemas de sincronización.
-
-¿Quieres que te muestre también el flujo recomendado con ramas para que tu equipo trabaje más organizado (ej: main, develop, feature/...)?
-=========================
-Unity .gitignore
-=========================
-Archivos y carpetas generados automáticamente
-[Librería ignorada]/
-[Librería ignorada]/
-[Librería ignorada]/
-[Librería ignorada]/
-[Librería ignorada]/
-
-Archivos de compilación
-*.apk
-*.aab
-*.unitypackage
-*.app
-*.exe
-*.dll
-*.class
-*.jar
-*.so
-*.dylib
-
-Configuración local de IDEs
-.vscode/
+# === RIDER (JetBrains) ===
 .idea/
-*.csproj
-*.unityproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
+*.iml
 
-Archivos de sistema
-.DS_Store
-Thumbs.db
-
-Archivos temporales de Unity
-*.swp
-*.tmp
-*.temp
-*.log
-*.orig
-
-Archivos de caché de compilación
-*.apk
-*.aab
-*.xcuserstate
-*.xcworkspace
-*.xcuserdata
-*.xcsettings
-
-Archivos generados por Unity Cloud o cache
-sysinfo.txt
-crashlytics-build.properties
+# === CRASH / DEBUG ===
+*.stacktrace
